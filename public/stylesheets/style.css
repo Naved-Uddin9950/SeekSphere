@@ -1,8 +1,84 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-a {
-  color: #00B7FF;
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navbar */
+.nav-container {
+  width: 100%;
+  position: fixed;
+  top: 10px;
+  right: 5px;
+  left: 5px;
+}
+
+
+/* Search bar */
+.search-container {
+  width: 80%;
+  position: fixed;
+  top: 35%;
+  min-width: 300px;
+}
+
+
+/* Branding | logo */
+.brand {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#logo {
+  width: auto;
+  height: 200px;
+}
+
+.seek, .sphere {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+}
+
+
+/* Footer */
+.footer-container {
+  width: 320px;
+  position: fixed;
+  top: 85%;
+  left: calc(50vw - 160px);
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons > ul {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.social-icons > ul > li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-icons > ul > li a:hover {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+}
+
+.icons {
+  font-size: 24px;
 }
